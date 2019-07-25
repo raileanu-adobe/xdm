@@ -1,0 +1,47 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/displayadvertising/insertionorder",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Display Advertising Insertion Order",
+  "type": "object",
+  "description": "Adobe Advertising Cloud DSP Insertion Order Details.",
+  "definitions": {
+    "insertionorder": {
+      "properties": {
+        "xdm:insertionOrderId": {
+          "title": "Insertion Order Identifier",
+          "type": "integer",
+          "description": "Insertion Order Identifier on the display advertising platform."
+        },
+        "xdm:insertionOrderName": {
+          "title": "Insertion Order Name",
+          "type": "string",
+          "description": "Name of the Insertion Order."
+        },
+        "xdm:insertionOrderStartTime": {
+          "title": "Campaign start date.",
+          "type": "string",
+          "format": "date-time",
+          "description": "The insertion order fields representing campaign start date."
+        },
+        "xdm:insertionOrderEndTime": {
+          "title": "Campaign end date.",
+          "type": "string",
+          "format": "date-time",
+          "description": "The insertion order fields representing campaign end date."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/insertionorder"
+    }
+  ],
+  "meta:status": "experimental"
+}

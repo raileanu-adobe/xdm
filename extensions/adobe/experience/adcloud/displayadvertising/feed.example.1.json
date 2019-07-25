@@ -1,0 +1,24 @@
+{
+  "xdm:id": 1,
+  "xdm:feedKey": "YFk8RnlYHwnG4KbFSQor",
+  "xdm:feedName": "DailyMotion : CTP : USA : Video 1 : Karate Kid",
+  "xdm:feedType": "TMEmbed",
+  "xdm:adserver": {
+    "xdm:adServerId": 12,
+    "xdm:adServerName": "MediaMind"
+  },
+  "xdm.mediaproperty": {
+    "xdm:mediaPropertyId": 34,
+    "xdm:mediaPropertyName": "AppNexus",
+    "xdm:source": "appnexus",
+    "xdm:publisher": "AppNexus"
+  },
+  "xdm.adserver": {
+    "xdm:adServerId": 34,
+    "xdm:adServerName": "LiveRail",
+    "xdm:privateFeedProvider": true
+
+  },
+  "repo:createDate": "2019-04-26T14:00:00+00:00",
+  "repo:modifyDate": "2019-04-27T14:00:00+00:00"
+}

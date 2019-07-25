@@ -1,0 +1,80 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/displayadvertising/mediapropertysite",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Display Advertising Media Property Site",
+  "type": "object",
+  "description": "Adobe Advertising Cloud DSP Advertiser Details.",
+  "definitions": {
+    "displayadvertising-mediapropertysite": {
+      "properties": {
+        "xdm:mediaPropertySiteId": {
+          "title": "Media Property Site Id",
+          "type": "string",
+          "description": "The identifier of the Media Property Site."
+        },
+        "xdm:mediaPropertyId": {
+          "title": "Media Property Id",
+          "type": "integer",
+          "description": "The identifier of the Media Property."
+        },
+        "xdm:placementSiteId": {
+          "title": "Placement Site Id",
+          "type": "integer",
+          "description": "The identifier of the Placement Site."
+        },
+        "xdm:display": {
+          "title": "Display",
+          "type": "boolean",
+          "description": "Whether this site supports display ads."
+        },
+        "xdm:html": {
+          "title": "html",
+          "type": "boolean",
+          "description": "Whether this site supports html ads."
+        },
+        "xdm:social": {
+          "title": "social",
+          "type": "boolean",
+          "description": "Whether this site supports social ads."
+        },
+        "xdm:vpaid": {
+          "title": "vpaid",
+          "type": "boolean",
+          "description": "Whether this site supports vpaid ads."
+        },
+        "xdm:connectedTv": {
+          "title": "connectedTv",
+          "type": "boolean",
+          "description": "Whether this site supports connectedTv ads."
+        },
+        "xdm:app": {
+          "title": "app",
+          "type": "boolean",
+          "description": "Whether this site supports in-app ads."
+        },
+        "xdm:ptv": {
+          "title": "ptv",
+          "type": "boolean",
+          "description": "Whether this site supports ptv ads."
+        },
+        "xdm:audio": {
+          "title": "audio",
+          "type": "boolean",
+          "description": "Whether this site supports audio ads."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/displayadvertising-mediapropertysite"
+    }
+  ],
+  "meta:status": "experimental"
+}

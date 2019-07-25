@@ -1,0 +1,45 @@
+{
+  "xdm:id": "1",
+  "xdm:placementKey": "YFk8RnlYHwnG4KbFSQor",
+  "xdm:placementName": "Yahoo : CTP : UK : YouTube",
+  "xdm:placementType": "Site",
+  "xdm:placementStartTime": "2017-02-26T15:52:25+00:00",
+  "xdm:placementEndTime": "2017-09-26T15:52:25+00:00",
+  "xdm:placementBudget": 123,
+  "xdm:campaign": {
+    "xdm:campaignId": 12,
+    "xdm:campaignKey": "QEr8RnlYHwnG4KbFSQor",
+    "xdm:campaignName": "News At Cisco",
+    "xdm:timezone": "America/New_York"
+  },
+  "xdm.insertionorder": {
+    "xdm:insertionOrderId": 34,
+    "xdm:insertionOrderName": "Slam Dunk Sundays",
+    "xdm:insertionOrderStartTime": "2017-03-26T15:52:25+00:00",
+    "xdm:insertionOrderEndTime": "2017-03-28T15:52:25+00:00"
+  },
+  "xdm.package": {
+    "xdm:packageId": 925,
+    "xdm:packageName": "PR",
+    "xdm:packageDescription": "PreRoll Fashion and Beauty Behavioural targeting",
+    "xdm:unitsPurchased": "340909.0",
+    "xdm:packageStartTime": "2017-02-26T15:52:25+00:00",
+    "xdm:packageEndTime": "2017-09-26T15:52:25+00:00"
+  },
+  "xdm.advertiser": {
+    "xdm:advertiserId": 234,
+    "xdm:advertiserKey": "QEr8RnlYHwnG4KbFSQoA",
+    "xdm:advertiserName": "Workday",
+    "xdm:advertiserUrl": "http://www.workday.com",
+    "xdm:amoClientId": "567"
+  },
+  "xdm.account": {
+    "xdm:accountId": 3,
+    "xdm:accountName": "Dailymotion",
+    "xdm:accountType": "brand direct no agency",
+    "xdm:productName": "PrivateExchange",
+    "xdm:currencyCode": "USD"
+  },
+  "repo:createDate": "2019-04-26T14:00:00+00:00",
+  "repo:modifyDate": "2019-04-27T14:00:00+00:00"
+}

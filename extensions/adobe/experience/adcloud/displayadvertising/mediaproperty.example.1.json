@@ -1,0 +1,9 @@
+{
+  "xdm:mediaPropertyId": 6,
+  "xdm:mediaPropertyName": "Google AdEx",
+  "xdm:source": "google",
+  "xdm:publisher": "Google AdEx",
+  "xdm:videoCertified": true,
+  "xdm:displayCertified": true,
+  "xdm:audioCertified": false
+}

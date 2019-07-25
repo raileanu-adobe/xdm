@@ -1,0 +1,51 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/displayadvertising/advertiser",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Display Advertising Advertiser",
+  "type": "object",
+  "description": "Adobe Advertising Cloud DSP Advertiser Details.",
+  "definitions": {
+    "displayadvertising-advertiser": {
+      "properties": {
+        "xdm:advertiserId": {
+          "title": "Advertiser Identifier",
+          "type": "integer",
+          "description": "Identifier of the advertiser."
+        },
+        "xdm:advertiserKey": {
+          "title": "Advertiser Key",
+          "type": "string",
+          "description": "Unique external identifier for the advertiser."
+        },
+        "xdm:advertiserName": {
+          "title": "Advertiser Name",
+          "type": "string",
+          "description": "The name of the advertiser."
+        },
+        "xdm:advertiserUrl": {
+          "title": "Advertiser Url",
+          "type": "string",
+          "format": "uri",
+          "description": "Advertiser Url."
+        },
+        "xdm:userId": {
+          "title": "User Identifier",
+          "type": "integer",
+          "description": "The corresponding user identifier for this advertiser in search advertising."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/displayadvertising-advertiser"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,55 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/displayadvertising/site",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Display Advertising Placement Site",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:auditable": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Display Advertising Placement Site",
+  "definitions": {
+    "displayadvertising-site": {
+      "properties": {
+        "xdm:siteKey": {
+          "title": "Site Key",
+          "type": "string",
+          "description": "Placement site external unique identifier."
+        },
+        "xdm:siteName": {
+          "title": "Site Name",
+          "type": "string",
+          "description": "Placement site name."
+        },
+        "xdm:siteUrl": {
+          "title": "Site Url",
+          "type": "string",
+          "description": "Placement site url."
+        }
+        },
+      "xdm:mediaPropertySite": {
+        "title": "Media Property Site Details",
+        "description": "Media Property Site Details",
+        "$ref": "https://ns.adobe.com/experience/adcloud/displayadvertising/mediapropertysite"
+      }
+      }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
+    {
+      "$ref": "#/definitions/displayadvertising-site"
+    }
+  ],
+  "meta:status": "experimental"
+}

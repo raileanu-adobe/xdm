@@ -1,0 +1,21 @@
+{
+  "xdm:id": 9,
+  "xdm:siteKey": "YFk8RnlYHwnG4KbFSQor",
+  "xdm:siteName": "Young Hollywood",
+  "xdm:siteUrl": "http://younghollywood",
+  "xdm.mediaPropertySite": {
+    "xdm:mediaPropertySiteId":"YoungHollywood Apple TV",
+    "xdm:mediaPropertyId":1061,
+    "xdm:placementSiteId":9,
+    "xdm:display":false,
+    "xdm:html":false,
+    "xdm:social":false,
+    "xdm:vpaid":false,
+    "xdm:connectedTv":true,
+    "xdm:app":false,
+    "xdm:ptv":false,
+    "xdm:audio":false
+  },
+  "repo:createDate": "2019-04-26T14:00:00+00:00",
+  "repo:modifyDate": "2019-04-27T14:00:00+00:00"
+}

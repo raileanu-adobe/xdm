@@ -1,0 +1,60 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/adcloud/displayadvertising/promotedvideo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Display Advertising Promoted Video",
+  "type": "object",
+  "description": "Adobe Advertising Cloud DSP promoted video Details.",
+  "definitions": {
+    "displayadvertising-promotedvideo": {
+      "properties": {
+        "xdm:promotedVideoId": {
+          "title": "promotedVideoId",
+          "type": "integer",
+          "description": "promotedVideoId."
+        },
+        "xdm:promotedVideoKey": {
+          "title": "promotedVideoKey",
+          "type": "string",
+          "description": "External unique identifier for a promoted video the ad is displaying."
+        },
+        "xdm:campaignKey": {
+          "title": "campaignKey",
+          "type": "string",
+          "description": "Identifier for the campaign that belongs to the displayed advertisement."
+        },
+        "xdm:promotedVideoName": {
+          "title": "promotedVideoName",
+          "type": "string",
+          "description": "A name that uniquely identifies the promoted video within the campaign."
+        },
+        "xdm:promoteVideoDuration": {
+          "title": "promoteVideoDuration",
+          "type": "integer",
+          "description": "The duration of the video."
+        },
+        "xdm:promotedVideoTags": {
+          "title": "Promoted Video Tags",
+          "type": "string",
+          "description": "Labels describing ad categories for this video."
+        },
+        "xdm:promotedVideoDescription": {
+          "title": "Promoted Video Description",
+          "type": "string",
+          "description": "Detailed description for this video."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/displayadvertising-promotedvideo"
+    }
+  ],
+  "meta:status": "experimental"
+}

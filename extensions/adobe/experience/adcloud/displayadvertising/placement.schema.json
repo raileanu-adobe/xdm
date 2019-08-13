@@ -10,7 +10,7 @@
   "title": "Display Advertising Campaign Placement",
   "type": "object",
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "Adobe Advertising Cloud DSP Campaign Placement hierarchy details such as name, type, campaign, account, package, advertiser, account.",
+  "description": "Adobe Advertising Cloud DSP Campaign Placement hierarchy details such as name, type, campaignId, account, package, advertiser, account.",
   "definitions": {
     "displayadvertising-placement": {
       "properties": {
@@ -67,17 +67,12 @@
           "title": "Campaign Placement Budget",
           "type": "integer",
           "description": "Campaign placement budget."
+        },
+        "xdm:campaignId": {
+          "title": "Campaign Identifier",
+          "type": "integer",
+          "description": "Campaign Identifier on the display advertising platform corresponding to this placement."
         }
-      },
-      "xdm:campaign": {
-        "title": "Campaign Details",
-        "description": "Campaign Details",
-        "$ref": "https://ns.adobe.com/experience/adcloud/displayadvertising/campaign"
-      },
-      "xdm:insertionorder": {
-        "title": "Insertion Order Details",
-        "description": "Insertion Order Details",
-        "$ref": "https://ns.adobe.com/experience/adcloud/displayadvertising/insertionorder"
       },
       "xdm:package": {
         "title": "Package Details",
@@ -98,7 +93,7 @@
   },
   "required": [
     "xdm:advertiser",
-    "xdm:campaign"
+    "xdm:campaignId"
   ],
   "allOf": [
     {

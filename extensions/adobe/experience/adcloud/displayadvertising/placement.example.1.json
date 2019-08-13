@@ -6,18 +6,7 @@
   "xdm:placementStartTime": "2017-02-26T15:52:25+00:00",
   "xdm:placementEndTime": "2017-09-26T15:52:25+00:00",
   "xdm:placementBudget": 123,
-  "xdm:campaign": {
-    "xdm:campaignId": 12,
-    "xdm:campaignKey": "QEr8RnlYHwnG4KbFSQor",
-    "xdm:campaignName": "News At Cisco",
-    "xdm:timezone": "America/New_York"
-  },
-  "xdm.insertionorder": {
-    "xdm:insertionOrderId": 34,
-    "xdm:insertionOrderName": "Slam Dunk Sundays",
-    "xdm:insertionOrderStartTime": "2017-03-26T15:52:25+00:00",
-    "xdm:insertionOrderEndTime": "2017-03-28T15:52:25+00:00"
-  },
+  "xdm:campaignId": 12,
   "xdm.package": {
     "xdm:packageId": 925,
     "xdm:packageName": "PR",

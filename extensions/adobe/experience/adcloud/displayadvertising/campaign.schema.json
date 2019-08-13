@@ -9,21 +9,17 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Display Advertising Campaign",
   "type": "object",
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Adobe Advertising Cloud DSP Campaign Details.",
   "definitions": {
     "displayadvertising-campaign": {
       "properties": {
-        "xdm:campaignId": {
-          "title": "Campaign Identifier",
-          "type": "integer",
-          "description": "Campaign Identifier on the display advertising platform."
-        },
         "xdm:campaignKey": {
           "title": "Campaign Key",
           "type": "string",
           "description": "Campaign external identifier."
         },
-        "xdm:campaignName": {
+        "xdm:name": {
           "title": "Campaign Name",
           "type": "string",
           "description": "Name of the campaign."
@@ -32,11 +28,102 @@
           "title": "Campaign Timezone",
           "type": "string",
           "description": "Timezone of the campaign."
+        },
+        "xdm:type": {
+          "title": "Campaign Type",
+          "type": "string",
+          "description": "Campaign Type",
+          "enum": [
+            "Media",
+            "Brandsights"
+          ],
+          "meta:enum": {
+            "Media": "Media",
+            "Brandsights": "Brandsights"
+          }
+        },
+        "xdm:billingType": {
+          "title": "Billing Type",
+          "type": "string",
+          "description": "Billing Type",
+          "enum": [
+            "Playtime",
+            "DSPPlatform",
+            "DSPMSA",
+            "DSPTrading",
+            "Marketing",
+            "Testing",
+            "DSPOnline",
+            "Audit"
+          ],
+          "meta:enum": {
+            "Playtime": "Playtime",
+            "DSPPlatform": "DSP - Platform IO ",
+            "DSPMSA": "DSP - MSA",
+            "DSPTrading": " DSP - Trading Desk",
+            "Marketing": "Marketing ",
+            "Testing": "Testing ",
+            "DSPOnline": "DSP - Platform Online ",
+            "Audit": "Viewability Audit "
+          },
+          "xdm:budgetCap": {
+            "title": "Budget Cap",
+            "type": "integer",
+            "description": "Budget Cap."
+          }
+        },
+        "xdm:startTime": {
+          "title": "Campaign start date.",
+          "type": "string",
+          "format": "date-time",
+          "description": "The insertion order fields representing campaign start date."
+        },
+        "xdm:endTime": {
+          "title": "Campaign end date.",
+          "type": "string",
+          "format": "date-time",
+          "description": "The insertion order fields representing campaign end date."
+        },
+        "xdm:status": {
+          "title": "Campaign Status",
+          "type": "string",
+          "description": "Campaign Status extracted from the Insertion Order associated with this campaign.Indicates if underlying ads are eligible to serve.",
+          "enum": [
+            "Active",
+            "Inactive",
+            "Deleted",
+            "Paid"
+          ],
+          "meta:enum": {
+            "Active": "Active",
+            "Inactive": "Inactive",
+            "Deleted": "Deleted",
+            "Paid": "Paid"
+          }
+        },
+        "xdm:accountId": {
+          "title": "Account Identifier",
+          "type": "integer",
+          "description": "Identifier for the account."
+        },
+        "xdm:advertiserId": {
+          "title": "Advertiser Identifier",
+          "type": "integer",
+          "description": "Identifier for the advertiser."
         }
       }
     }
   },
+  "required": [
+    "xdm:campaignId"
+  ],
   "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/auditable"
+    },
     {
       "$ref": "#/definitions/displayadvertising-campaign"
     }

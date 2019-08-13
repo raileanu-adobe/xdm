@@ -1,6 +1,13 @@
 {
-  "xdm:campaignId": 12,
+  "xdm:id": "12",
   "xdm:campaignKey": "QEr8RnlYHwnG4KbFSQor",
-  "xdm:campaignName": "News At Cisco",
-  "xdm:timezone": "America/New_York"
+  "xdm:name": "News At Cisco",
+  "xdm:timezone": "America/New_York",
+  "xdm:type":"Media",
+  "xdm:billingType":"Playtime",
+  "xdm:status":"Active",
+  "xdm:accountId":1,
+  "xdm:advertiserId":3,
+  "xdm:startTime":"2019-01-09 00:00:00",
+  "xdm:endTime":"2019-01-11 00:00:00"
 }
